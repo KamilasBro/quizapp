@@ -4,8 +4,12 @@ body {
   margin: 0;
   background-color: #F5F7FB;
 }
+img{
+  -webkit-tap-highlight-color: transparent;
+}
 button{
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 h1{
   font-family: 'Karla', sans-serif;
