@@ -1,13 +1,26 @@
+@import url(./css/startscreen.css);
+@import url(./css/quizScreen.css);
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button{
+  cursor: pointer;
+}
+h1{
+  font-family: 'Karla', sans-serif;
+}
+p, button{
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F7FB;
+}
+hr{
+  border: 0.8px solid #DBDEF0;
 }

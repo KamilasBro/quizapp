@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React, {useState} from "react";
+import StartScreen from "./components/StartScreen";
+import QuizScreen from "./components/QuizScreen";
+import blob1 from "./images/blob1.png"
+import blob2 from "./images/blob2.png"
+import blob3 from "./images/blob3.png"
+export default function App() {
+  const [startScreen, setStartScreen]=useState(true)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <img className="blob1" src={blob1} alt="blob1"/>
+      {startScreen===true
+      ?
+        <>
+        <img className="blob2" src={blob2} alt="blob2"/>
+        <StartScreen setStartScreen={()=>setStartScreen(prevState=>!prevState)}/>
+        </>
+      :
+      <>
+        <img className="blob3" src={blob3} alt="blob3"/>
+        <QuizScreen/>
+      </>
+      }
+    </main>
   );
 }
-
-export default App;

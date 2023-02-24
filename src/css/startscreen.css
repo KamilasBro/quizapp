@@ -1,0 +1,41 @@
+.startScreen{
+    text-align: center;
+}
+.startScreen h1{
+    margin-block: 20px;
+    font-size: 50px;
+    color: #293264;
+}
+.startScreen p{
+    margin-block: 20px;
+    font-size: 28px;
+    color: #293264;
+}
+.blob1{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.blob2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.blob3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.startScreen .btn-wrap{
+    display: flex;
+    justify-content: center;
+}
+.startScreen button{
+    font-size: 20px;
+    color: #F5F7FB;
+    border: none;
+    width: 240px;
+    height: 60px;
+    background: #4D5B9E;
+    border-radius: 15px;
+}
