@@ -59,30 +59,13 @@ export default function QuizScreen() {
         document.querySelectorAll(`.${event.target.className}`).forEach(e=>{
           e.style.backgroundColor="transparent";
           e.style.border="0.9px solid #4D5B9E";
-          //adding hover after setting style inside component
-          e.addEventListener("mouseover",()=>{
-            e.style.backgroundColor="#D6DBF5";
-            e.style.borderColor="transparent";
-          })
-          e.addEventListener("mouseout",()=>{
-            e.style.backgroundColor="transparent";
-            e.style.border="0.9px solid #4D5B9E";
-          })
         })
         //changing style on click
         event.target.style.backgroundColor="#D6DBF5"
         event.target.style.borderColor="transparent"
-        //overwrite previous event listener
-        event.target.addEventListener("mouseover",()=>{
-        event.target.style.backgroundColor="#D6DBF5"
-        event.target.style.borderColor="transparent"
-        })
-        event.target.addEventListener("mouseout",()=>{
-          event.target.style.backgroundColor="#D6DBF5"
-          event.target.style.borderColor="transparent"
-        })
     }
   }
+
   // console.log(data.results)
 
 
@@ -103,7 +86,7 @@ export default function QuizScreen() {
       
       {isFetched&&data.results.map((e,index)=>{
         return(
-          <div key={index}>
+          <div key={index} className={"questionDiv"}>
             <h1>{replacer(e.question)}</h1>
             {randomPosition[index]===1?
             <div>

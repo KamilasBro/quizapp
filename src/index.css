@@ -2,6 +2,7 @@
 @import url(./css/quizScreen.css);
 body {
   margin: 0;
+  background-color: #F5F7FB;
 }
 button{
   cursor: pointer;
@@ -19,8 +20,51 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F5F7FB;
 }
 hr{
   border: 0.8px solid #DBDEF0;
+}
+.blob1{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.blob2, .blob3{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media(max-width: 1280px){
+  .blob1{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+  .blob2, .blob3{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+}
+@media(max-width: 500px){
+  main{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
+@media(max-height: 800px){
+  main{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .blob2, .blob3{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 }
