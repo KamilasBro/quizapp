@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
-import specialSymbols from "../data/specialSymbols";
-
+import specialSymbols from "../../data/specialSymbols";
+import "./quizScreen.css"
 export default function QuizScreen() {
   const [data, setData]=useState([])//for API data
   const [isFetched, setIsFetched]=useState(false)//to determine when to load component

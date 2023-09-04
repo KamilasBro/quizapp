@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import StartScreen from "./components/StartScreen";
-import QuizScreen from "./components/QuizScreen";
+import StartScreen from "./components/StartScreen/StartScreen";
+import QuizScreen from "./components/QuizScreen/QuizScreen";
 import blob1 from "./images/blob1.png"
 import blob2 from "./images/blob2.png"
 import blob3 from "./images/blob3.png"

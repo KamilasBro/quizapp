@@ -1,3 +1,4 @@
+import "./startScreen.css"
 export default function StartScreen(props) {
   return (
     <section className="startScreen">
